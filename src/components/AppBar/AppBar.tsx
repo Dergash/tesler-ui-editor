@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Menu} from 'antd'
+import {Button} from 'antd'
 import styles from './AppBar.module.css'
 
 export const AppBar: React.FC = (props) => {

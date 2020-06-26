@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card} from 'antd'
-import {useDispatch, useSelector} from 'react-redux'
+import {useSelector} from 'react-redux'
 import { AppState } from '../../reducers'
 import styles from './View.module.css'
 
@@ -29,8 +29,9 @@ export const View: React.FC = (props) => {
             </p>
         </Card>
         <Card title={`/db/migration/oracle/meta/main/RESPONSIBILITIES.sql`}>
+            <p>insert into responsibilities (id, resp_type, screens, dept_id, internal_role_cd) VALUES (nextval('RESPONSIBILITY_ID'), 'SCREEN',</p>
             <p className={styles.json}>
-                {responsibilitiesJson}
+                '{responsibilitiesJson}'
             </p>
         </Card>
     </div>

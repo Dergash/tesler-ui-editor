@@ -16,6 +16,7 @@ export const ScreenBuilder: React.FC = (props) => {
     const [fileNameLock, setFileNameLock] = React.useState(true)
     const [directoryName, setDirectoryName] = React.useState('')
     const [directoryNameLock, setDirectoryNameLock] = React.useState(true)
+    const handleCancel = () => dispatch($smDo.addScreen(null))
 
     const handleName: React.ChangeEventHandler<HTMLInputElement> = (e) => {
         setName(e.currentTarget.value)
@@ -37,6 +38,10 @@ export const ScreenBuilder: React.FC = (props) => {
     const handleFileName: React.ChangeEventHandler<HTMLInputElement> = (e) => {
         setFileName(e.currentTarget.value)
     }
+
+    const handleDirectoryName: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+        setDirectoryName(e.currentTarget.value)
+    }
     
     const dispatch = useDispatch<Dispatch<CustomAnyAction>>()
     const handleSave = () => {
@@ -50,7 +55,7 @@ export const ScreenBuilder: React.FC = (props) => {
         }))
     }
     const visible = useSelector((state: AppState) => state.screen.showScreenBuilder)
-    return <Modal visible={visible} title="Add new screen" onOk={handleSave}>
+    return <Modal visible={visible} title="Add new screen" onOk={handleSave} onCancel={handleCancel}>
         <Form layout='vertical' >
             <Form.Item className={styles.title}>
                 <Input placeholder="Title" onChange={handleTitle} value={title} />
@@ -82,10 +87,11 @@ export const ScreenBuilder: React.FC = (props) => {
                             value={directoryName}
                             locked={directoryNameLock}
                             onLock={setDirectoryNameLock}
+                            onChange={handleDirectoryName}
                         />
                     </Form.Item>
                     <Form.Item label="Primary view(s)">
-                        <Input placeholder="Primary view(s)" />
+                        <Input placeholder="Primary view(s)" disabled />
                     </Form.Item>
                 </Collapse.Panel>
             </Collapse>

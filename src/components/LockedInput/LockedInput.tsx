@@ -1,5 +1,5 @@
 import React from 'react'
-import {Input, Icon, Button} from 'antd'
+import {Input, Icon} from 'antd'
 import styles from './LockedInput.module.css'
 import { InputProps } from 'antd/lib/input'
 

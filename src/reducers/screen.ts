@@ -1,5 +1,4 @@
-import {coreActions} from '@tesler-ui/core'
-import {AnyAction} from '@tesler-ui/core/actions/actions'
+// import {coreActions} from '@tesler-ui/core'
 import {BcMetaState} from '@tesler-ui/core/interfaces/bc'
 import {ObjectMap} from '@tesler-ui/core/interfaces/objectMap'
 import {EditorScreenState} from '../interfaces/screen'

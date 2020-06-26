@@ -2,6 +2,7 @@
   "name": "tesler-ui-editor",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dergash.github.io/tesler-ui-editor",
   "dependencies": {
     "@tesler-ui/core": "^1.13.0",
     "@testing-library/jest-dom": "^5.5.0",
