@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tesler-ui-editor/static/css/main.b8e79692.chunk.css",
+    "main.js": "/tesler-ui-editor/static/js/main.3b3c4bff.chunk.js",
+    "main.js.map": "/tesler-ui-editor/static/js/main.3b3c4bff.chunk.js.map",
+    "runtime-main.js": "/tesler-ui-editor/static/js/runtime-main.a353061b.js",
+    "runtime-main.js.map": "/tesler-ui-editor/static/js/runtime-main.a353061b.js.map",
+    "static/css/2.2e872fcd.chunk.css": "/tesler-ui-editor/static/css/2.2e872fcd.chunk.css",
+    "static/js/2.0257078e.chunk.js": "/tesler-ui-editor/static/js/2.0257078e.chunk.js",
+    "static/js/2.0257078e.chunk.js.map": "/tesler-ui-editor/static/js/2.0257078e.chunk.js.map",
+    "index.html": "/tesler-ui-editor/index.html",
+    "precache-manifest.3d28de1895218255703a24d9dc7319bd.js": "/tesler-ui-editor/precache-manifest.3d28de1895218255703a24d9dc7319bd.js",
+    "service-worker.js": "/tesler-ui-editor/service-worker.js",
+    "static/css/2.2e872fcd.chunk.css.map": "/tesler-ui-editor/static/css/2.2e872fcd.chunk.css.map",
+    "static/css/main.b8e79692.chunk.css.map": "/tesler-ui-editor/static/css/main.b8e79692.chunk.css.map",
+    "static/js/2.0257078e.chunk.js.LICENSE.txt": "/tesler-ui-editor/static/js/2.0257078e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a353061b.js",
+    "static/css/2.2e872fcd.chunk.css",
+    "static/js/2.0257078e.chunk.js",
+    "static/css/main.b8e79692.chunk.css",
+    "static/js/main.3b3c4bff.chunk.js"
+  ]
+}
