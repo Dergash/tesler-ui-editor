@@ -1,0 +1,27 @@
+.lock {
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 0px;
+}
+
+.collapse {
+    background: transparent;
+}
+
+.collapse :global(.ant-collapse-content-box) {
+    padding-left: 0;
+}
+
+:global(.ant-collapse).collapse  > :global(.ant-collapse-item > .ant-collapse-header) {
+    padding-left: 20px;
+}
+
+.collapse :global(.ant-collapse-item > .ant-collapse-header .ant-collapse-arrow) {
+    left: 0;
+}
+
+:global(.ant-collapse-borderless).collapse  > :global(.ant-collapse-item) {
+    border-bottom: none;
+}

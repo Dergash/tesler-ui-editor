@@ -20,10 +20,12 @@ import {Provider} from '@tesler-ui/core'
 import {LocaleProvider} from 'antd'
 import enUs from 'antd/es/locale-provider/en_US'
 import './index.css'
+import { AppLayout } from './AppLayout'
+import { reducers } from './reducers'
 
-const App = <Provider useEpics={false}>
+const App = <Provider useEpics={false} customReducers={reducers}>
     <LocaleProvider locale={enUs}>
-        <div>Hello World</div>
+        <AppLayout />
     </LocaleProvider>
 </Provider>
 

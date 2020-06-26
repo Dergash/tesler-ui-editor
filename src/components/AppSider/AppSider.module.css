@@ -1,0 +1,45 @@
+.container {
+    color: white;
+}
+
+.header {
+    height: 64px;
+    display: flex;
+}
+
+.screens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    background-color: transparent;
+    margin-bottom: 16px;
+}
+/*
+.menu:global(.ant-menu:not(.ant-menu-horizontal)) :global(.ant-menu-item-selected) {
+    background-color: transparent;
+}
+*/
+.screen {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+:global(.ant-menu-inline).menu :global(.ant-menu-item).screen {
+    font-size: 16px;
+}
+
+:global(.ant-menu-inline).menu :global(.ant-menu-item).screen:hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+:global(.ant-menu-inline).menu :global(.ant-menu-item).screen:active {
+    background-color: transparent;
+}
+
+:global(.ant-menu:not(.ant-menu-horizontal)).menu :global(.ant-menu-item-selected).screen {
+    background-color: transparent;
+    color: white;
+}

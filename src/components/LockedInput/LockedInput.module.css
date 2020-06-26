@@ -1,0 +1,7 @@
+:global(.ant-input-suffix .anticon.anticon-lock).lock {
+    cursor: pointer;
+}
+
+.lock:hover {
+    color: black;
+}
