@@ -21,7 +21,12 @@ export const AppSider: React.FC = (props) => {
         <div className={styles.header}>
         </div>
         <div className={styles.screens}>
-            <Menu mode="inline" className={styles.menu} defaultSelectedKeys={[screens[0]?.name]} onSelect={handleSelect}>
+            <Menu
+                mode="inline"
+                className={styles.menu}
+                defaultSelectedKeys={[screens[0]?.name]}
+                onSelect={handleSelect}
+            >
             { screens.map(screen => {
                 return <Menu.Item key={screen.name} className={styles.screen}>
                     {screen.title}
